@@ -1,9 +1,217 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title> fishbook mail </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale=1>
+        <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
     </head>
-    <body>
-        <h1> Hello World All</h1>
-    </body>
+<body>
+    <nav class = "navigation-grocery">
+        <img src="/assets/1.png" alt="Logo" class="logo">
+        <ul class="navigation-items">
+            <li class="box-header"><a href="#header-page">Home</a></li>
+            <li class="box-header"><a href="#middle-page">Our Product</a></li>
+            <li class="box-header"><a href="#bottom-page">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="pembatas-nav"></div>
+    <header id="header-page">
+      <h1 class="judul">
+        Toko Perbelanjaan Kebutuhan Harian Terlengkap di Indonesia
+      </h1>
+      <p class="subjudul">Belanja Simple, Harga Sesuai Budget</p>
+    </header>
+
+    <div class="pict-and-contact-us">
+      <div>
+        <img
+          class="gambar-belanjaan"
+          src="assets/belanja1.jpg"
+          alt="belanjaan"
+        />
+        <img
+          class="gambar-belanjaan"
+          src="assets/belanja2.jpg"
+          alt="belanjaan2"
+        />
+        <img
+          class="gambar-belanjaan"
+          src="assets/belanja3.jpg"
+          alt="belanjaan3"
+        />
+        <p>"Silakan dibeli sayur dan buah berkualitas hanya disini"</p>
+        <div class="pict-and-contact-us-content">
+          <div
+            class="circle"
+            style="background-image: url(assets/guru.jpg); margin-left: 10%"
+          ></div>
+          <div>
+            <b>William Hernandi</b><br />
+            <label style="color: gray">Seorang Guru, 45</label>
+          </div>
+        </div>
+        <div id="garis-tengah-tengah"></div>
+        <p
+          style="
+            max-width: 650px;
+            margin-left: -3px;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 50px;
+          "
+        >
+          FoodFood merupakan toko perbelanjaan kebutuhan harian
+          yang murah dan terpercaya. Berikut ini alasan-alasan
+          mengapa kamu harus belanja di FoodFood...
+        </p>
+        <div class="why-foodfood">
+          <div class="pict-and-contact-us-content">
+            <div
+              class="why-circle"
+              style="background-image: url(assets/money.png)"
+            ></div>
+            <div>
+              <label class="label-why-foodfood"
+                >Selama anda bayar, anda dilayani</label
+              >
+            </div>
+          </div>
+          <div class="pict-and-contact-us-content">
+            <div
+              class="why-circle"
+              style="background-image: url(assets/sama.png)"
+            ></div>
+            <div>
+              <label class="label-why-foodfood"
+                >Barang seperti kebanyakan tempat</label
+              >
+            </div>
+          </div>
+          <div class="pict-and-contact-us-content">
+            <div
+              class="why-circle"
+              style="background-image: url(assets/buy1get1.png)"
+            ></div>
+            <div>
+              <label class="label-why-foodfood"
+                >BELI 1 dapat 1</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-us">
+        <h2>Langganan Gratis</h2>
+        <div class="contact-us-content">
+          <p style="margin-left: -1px">
+            Langganan informasi terbaru tentang produk-produk kami
+          </p>
+          <label for="in-name">Nama</label><br />
+          <input type="text" id="in-name" /><br />
+          <label for="in-email">Alamat Email</label><br />
+          <input type="email" id="in-email" /><br />
+          <label for="in-interest">Pilih ketertarikan anda</label><br />
+          <select id="in-interest">
+            <option value="">===Pilih salah satu===</option>
+            <option value="sayur">Sayur-sayuran</option>
+            <option value="buah">Buah-buahan</option>
+          </select>
+          <p id="error-message"></p>
+          <input type="submit" id="submit-button" value="SEND" />
+        </div>
+      </div>
+    </div>
+
+    <div id="middle-page">
+      <h2>Our Package</h2>
+    </div>
+    <div class="package-satu">
+      <div class="package-satu-in">
+        <div
+          class="why-circle"
+          style="background-image: url(assets/salad.png)"
+        ></div>
+        <label class="package-atas">Sayuran segar</label><br />
+        <p class="package-bawah">
+          Sayur segar dari sumber pertani lokal.
+        </p>
+      </div>
+      <div class="package-satu-in">
+        <div
+          class="why-circle"
+          style="background-image: url(assets/buah.png)"
+        ></div>
+        <label class="package-atas">Buah-buahan segar</label><br />
+        <p class="package-bawah">
+          Buah dengan kualitas terbaik dari lokal atau import dan harga yang
+          menarik
+        </p>
+      </div>
+      <div class="package-satu-in">
+        <div
+          class="why-circle"
+          style="background-image: url(assets/paket.png)"
+        ></div>
+        <label class="package-atas">Pengiriman Instan</label><br />
+        <p class="package-bawah">
+          Dikirim secara instan oleh kurir yang telah ditraining dengan SOP
+          untuk menjaga kondisi belanjaanmu
+        </p>
+      </div>
+    </div>
+    <div id="garis-tengah-package"></div>
+    <div class="package-satu">
+      <div class="package-satu-in">
+        <div
+          class="why-circle"
+          style="background-image: url(assets/kitchen.png)"
+        ></div>
+        <label class="package-atas">Kebutuhan Dapur</label><br />
+        <p class="package-bawah">
+          Bumbu dapur lengkap untuk keperluan memasak kamu dalam membuat
+          berbagai kreasi masakan istimewa
+        </p>
+      </div>
+      <div class="package-satu-in">
+        <div
+          class="why-circle"
+          style="background-image: url(assets/dapur.jpg)"
+        ></div>
+        <label class="package-atas">Set Dapur</label><br />
+        <p class="package-bawah">
+          Segala jenis alat masak untuk membantu kamu memasak di rumah seperti
+          seorang chef profesional
+        </p>
+      </div>
+      <div class="package-satu-in">
+        <div
+          class="why-circle"
+          style="background-image: url(assets/box.png)"
+        ></div>
+        <label class="package-atas">Set Komplit</label><br />
+        <p class="package-bawah">
+          Bingung mau masak apa? Sudah tersedia paket untuk kamu masak di
+          dapurmu
+        </p>
+      </div>
+    </div>
+    <div style="padding: 50px"></div>
+    <div class="penutup">
+      <h2 id="bottom-page">Need some help?</h2>
+      <p>
+        Anda dapat menghubungi kami dengan menekan tombol di bawah ini. Customer
+        service kami akan senang hati menjawab pertanyaan anda.
+      </p>
+      <button>CALL US</button>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+  <footer>
+    <br />
+    <div id="pembatas-footer"></div>
+    Made by <b>Muhamad Heral</b><br />
+    For <b>RevoU</b> Software Engineering Fundamental Course Batch 22-Jan-2024
+  </footer>
 </html>
